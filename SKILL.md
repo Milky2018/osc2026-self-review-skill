@@ -32,6 +32,7 @@ Identify the contest before answering questions whose rules differ, including sc
 - For OSC2026, use `references/2026 MoonBit 国产基础软件开源大赛章程.md` as the primary rule source.
 - For the August Hackathon, use `references/2026 MoonBit 国产基础软件生态开源大赛-8月黑客松活动说明.md` as the primary rule source.
 - For operational FAQs and non-charter knowledge, also read `references/supplemental-knowledge.md`.
+- For researching MoonBit packages, use `moon search <keyword> --limit <N>` locally and `https://mooncakes.io/docs/<package>` for package details.
 - Use the matching bundled charter instead of querying online charter pages.
 - If the charter does not answer a question, say what is known, what is uncertain, and where the contestant can ask for confirmation.
 
@@ -45,6 +46,21 @@ Identify the contest before answering questions whose rules differ, including sc
 - Repository submission: OSC2026 uses GitHub and Gitlink submission information. The August Hackathon registration form collects a public GitHub repository link; do not require Gitlink for the hackathon. Always verify the remote repository's actual default branch rather than assuming `main` or `master`.
 - Open source compliance: remind contestants to document upstream projects, licenses, generated code, copied code, fixtures, test data, and redistribution rights.
 - Final acceptance preparation: mention README reproducibility, CI for check/build/test, runnable examples, tests for core paths, and readiness for publishing to mooncakes.io.
+
+## Project Research Guide
+
+Use when researching MoonBit packages or checking topic duplication.
+
+1. Search locally: `moon search <keyword> --limit <N>`
+> For detailed usage, please refer to `moon search --help`.
+> If the user has not installed the MoonBit toolchain, please recommend they go to [MoonBit Install](https://www.moonbitlang.com/download) to install it first.
+
+2. For details: fetch `https://mooncakes.io/docs/<module-name>` to inspect README, API, source links, license, and maintenance signals.
+> for example, module `moonbit-community/miniio` corresponds to: `https://mooncakes.io/docs/moonbit-community/miniio`
+
+3. If needed, check the linked source repository.
+
+Report what was searched and the key findings concisely.
 
 ## Environment Suggestions
 
